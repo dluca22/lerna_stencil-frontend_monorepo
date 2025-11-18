@@ -1,0 +1,10 @@
+import { type StencilVueComponent } from '@stencil/vue-output-target/runtime';
+import type { JSX } from 'stencil-library';
+export declare const AnotherOne: StencilVueComponent<JSX.AnotherOne>;
+export declare const ButtonEvent: StencilVueComponent<JSX.ButtonEvent>;
+export declare const CustomHello: StencilVueComponent<JSX.CustomHello>;
+export declare const HardcodedValues: StencilVueComponent<JSX.HardcodedValues>;
+export declare const MyComponent: StencilVueComponent<JSX.MyComponent>;
+export declare const StatusBadge: StencilVueComponent<JSX.StatusBadge>;
+export declare const TemplateCard: StencilVueComponent<JSX.TemplateCard>;
+export declare const XIcon: StencilVueComponent<JSX.XIcon>;

@@ -1,0 +1,22 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build:stencil": "lerna run build --scope=stencil-library",
+    "build:angular-lib": "lerna run build --scope=angular",
+    "build:react": "lerna run build --scope=react-stencil",
+    "build:vue": "lerna run build --scope=vue-library",
+    "run:stencil": "lerna run start --scope=stencil-library",
+    "run:angular": "lerna run start --scope=angular",
+    "run:react": "lerna run watch --scope=react-stencil",
+    "run:vue": "lerna run dev --scope=vue-app"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "lerna": "^9.0.1",
+    "typescript": "^5.9.3"
+  }
+}
