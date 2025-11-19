@@ -98,7 +98,7 @@ export const config: Config = {
     }),
     reactOutputTarget({
       outDir: '../react-library/lib/components/stencil-generated/',
-      customElementsDir: ''  // Key change: Removes '/dist/components/' prefix from imports
+      // customElementsDir: ''  // Key change: Removes '/dist/components/' prefix from imports
     }),
 
   ],

@@ -13,11 +13,13 @@
     "run:stencil": "lerna run start --scope=stencil-library",
     "run:angular": "lerna run start --scope=angular-workspace",
     "run:react": "lerna run dev --scope=react-app",
-    "run:vue": "lerna run dev --scope=vue-app"
+    "run:vue": "lerna run dev --scope=vue-app",
+    "run:all": "run-p run:stencil run:angular run:react run:vue"
   },
   "devDependencies": {
     "@types/node": "^24.10.1",
     "lerna": "^9.0.1",
+    "npm-run-all": "^4.1.5",
     "typescript": "^5.9.3"
   }
 }

@@ -32,7 +32,7 @@ export class ButtonEvent {
   render() {
     return (
       <button class="btn btn-primary" onClick={this.handleClick}>
-        <slot></slot> {this.counter}
+        <slot></slot> {this.counter} AWESOME 
       </button>
     );
   }
