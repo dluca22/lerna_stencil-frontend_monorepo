@@ -76,7 +76,9 @@ export class TemplateCard {
           in contrast to when the event is sent to the parent and @Listen is set to target: window events
         */
           this.addComplementaryActions
-            ? <button-event initialCount={this.accomplishmentValue}> +1 accomplishment!</button-event>
+            ? <span style={{ marginTop: '20px', display: 'inline-block' }}>
+              <button-event initialCount={this.accomplishmentValue}> +1 accomplishment!</button-event>
+            </span>
             : ''
         }
       </>

@@ -9,6 +9,7 @@
     "build:angular-lib": "lerna run build-component-lib --scope=angular-workspace",
     "build:react-lib": "lerna run build --scope=react-library",
     "build:vue-lib": "lerna run build --scope=vue-library",
+    "build:components": "npm run build:stencil && npm run build:angular-lib && npm run build:react-lib && npm run build:vue-lib",
     "run:stencil": "lerna run start --scope=stencil-library",
     "run:angular": "lerna run start --scope=angular-workspace",
     "run:react": "lerna run dev --scope=react-app",

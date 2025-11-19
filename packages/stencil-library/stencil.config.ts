@@ -57,7 +57,7 @@ export const config: Config = {
   outputTargets: [
     {
       type: 'dist',
-      // esmLoaderPath: '../loader',
+      esmLoaderPath: '../loader',
     },
     {
       type: 'dist-custom-elements',
@@ -86,16 +86,21 @@ export const config: Config = {
       customElementsDir: "dist/components",
 
     }),
-    vueOutputTarget({
+    // vueOutputTarget({
+    //   componentCorePackage: 'stencil-library',
+    //   proxiesFile: '../vue-library/lib/stencil-generated.ts',
+    //   includeImportCustomElements: true,
+    //   customElementsDir: '/dist/components'  // Explicitly set to match default output dir and exports
+    // }),
+     vueOutputTarget({
       componentCorePackage: 'stencil-library',
-      proxiesFile: '../vue/lib/stencil-generated.ts',
-      includeImportCustomElements: true,
-      customElementsDir: ''  // Key change: Removes '/dist/components/' prefix from lazy imports
+      proxiesFile: '../vue-library/lib/components.ts',
     }),
     reactOutputTarget({
-      outDir: '../react/lib/components/stencil-generated/',
+      outDir: '../react-library/lib/components/stencil-generated/',
       customElementsDir: ''  // Key change: Removes '/dist/components/' prefix from imports
-    })
+    }),
+
   ],
   testing: {
     browserHeadless: "shell",
