@@ -13,6 +13,14 @@
       "import": "./dist/stencil-library/stencil-library.esm.js",
       "require": "./dist/stencil-library/stencil-library.cjs.js"
     },
+    "./dist/*": {
+      "import": "./dist/*",
+      "types": "./dist/*"
+    },
+    "./components/*": {
+      "import": "./dist/components/*.js",
+      "types": "./dist/components/*.d.ts"
+    },
     "./my-component": {
       "import": "./dist/components/my-component.js",
       "types": "./dist/components/my-component.d.ts"

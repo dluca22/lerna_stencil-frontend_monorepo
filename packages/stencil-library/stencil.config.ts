@@ -53,11 +53,11 @@ import { reactOutputTarget } from '@stencil/react-output-target';
 // };
 
 export const config: Config = {
-  namespace: 'example-stencil',
+  namespace: 'stencil-library',
   outputTargets: [
     {
       type: 'dist',
-      esmLoaderPath: '../loader',
+      // esmLoaderPath: '../loader',
     },
     {
       type: 'dist-custom-elements',
@@ -71,15 +71,23 @@ export const config: Config = {
       type: 'www',
       serviceWorker: null,
     },
+    // angularOutputTarget({
+    //   componentCorePackage: 'stencil-library',
+    //   outputType: 'component',
+    //   directivesProxyFile: '../angular-workspace/projects/component-library/src/lib/stencil-generated/components.ts',
+    //   directivesArrayFile: '../angular-workspace/projects/component-library/src/lib/stencil-generated/index.ts',
+    //   customElementsDir: '',  // Optional; minimal effect here but adds consistency
+    // }),
     angularOutputTarget({
-      componentCorePackage: 'example-stencil',
+      componentCorePackage: 'stencil-library/loader',
       outputType: 'component',
-      directivesProxyFile: '../angular/projects/ng-stencil/src/lib/stencil-generated/components.ts',
-      directivesArrayFile: '../angular/projects/ng-stencil/src/lib/stencil-generated/index.ts',
-      customElementsDir: '',  // Optional; minimal effect here but adds consistency
+      directivesProxyFile: '../angular-workspace/projects/component-library/src/lib/stencil-generated/components.ts',
+      directivesArrayFile: '../angular-workspace/projects/component-library/src/lib/stencil-generated/index.ts',
+      customElementsDir: "dist/components",
+
     }),
     vueOutputTarget({
-      componentCorePackage: 'example-stencil',
+      componentCorePackage: 'stencil-library',
       proxiesFile: '../vue/lib/stencil-generated.ts',
       includeImportCustomElements: true,
       customElementsDir: ''  // Key change: Removes '/dist/components/' prefix from lazy imports
