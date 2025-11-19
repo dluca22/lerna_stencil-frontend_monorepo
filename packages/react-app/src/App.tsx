@@ -1,6 +1,7 @@
 // import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
+import { AnotherOne, CustomHello, HardcodedValues, MyComponent, StatusBadge, TemplateCard } from 'react-library'
 import './App.css'
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
         <div>
           This is the standard element, it inherits the global styles and applies none of its own
         </div>
-        <my-component first="Stencil" middle="'Don't call me a framework'" last="JS"></my-component>
+        <MyComponent first="Stencil" middle="'Don't call me a framework'" last="JS"></MyComponent>
 
       </section>
       <section>
@@ -20,23 +21,22 @@ function App() {
           This is another custom elements, in the shadow dom, which applies scoped styles that do not bleed outside
           its own scope
         </div>
-        <custom-hello first="Walker" middle="texas" last="ranger"></custom-hello>
+        <CustomHello first="Walker" middle="texas" last="ranger"></CustomHello>
       </section>
 
       <section>
         <div>
           This is a Card showcase with their own sub children and scoped styles
         </div>
-        <div style="display: flex; gap: 5px; flex-wrap: wrap;">
+        <div style={{ display: 'flex', gap: '5px', flexWrap: 'wrap' }}>
 
-          <template-card first="walker" last="Texas Ranger" job="Ranger/semi-god"
-            description-text="I usually smoke cigars and smash dickheads....but i'm all out of cigars" age="49"
-            accomplishments="99" add-complementary-actions="true"></template-card>
+          <TemplateCard first="walker" last="Texas Ranger" job="Ranger/semi-god"  age={49}
+            accomplishments={99} add-complementary-actions="true"></TemplateCard>
 
           <div>
-            <template-card first="rookie " last="patookie" job="Web dev"
-              description-text="I crash them code like it's going out of style" age="33" accomplishments="0"
-              add-complementary-actions="true"></template-card>
+            <TemplateCard first="rookie " last="patookie" job="Web dev"
+              description-text="I crash them code like it's going out of style" age={33} accomplishments={0}
+              add-complementary-actions="true"></TemplateCard>
 
           </div>
         </div>
@@ -46,24 +46,24 @@ function App() {
         <div>
           This is a status badge
         </div>
-        <status-badge message="You are logged in!" status="success"></status-badge>
-        <status-badge message="You received Mail!" status="info"></status-badge>
-        <status-badge message="Your token is about to expire!" status="warning"></status-badge>
-        <status-badge message="I will auto remove!" auto-remove ttl="5" status="secondary"></status-badge>
+        <StatusBadge message="You are logged in!" status="success"></StatusBadge>
+        <StatusBadge message="You received Mail!" status="info"></StatusBadge>
+        <StatusBadge message="Your token is about to expire!" status="warning"></StatusBadge>
+        <StatusBadge message="I will auto remove!" auto-remove ttl={5} status="secondary"></StatusBadge>
       </section>
 
       <section>
         <div>
           other componente created after
         </div>
-        <hardcoded-values></hardcoded-values>
+        <HardcodedValues></HardcodedValues>
       </section>
 
       <section>
         <div>
           other giving issue?!?!?!
         </div>
-        <another-one></another-one>
+        <AnotherOne></AnotherOne>
       </section>
 
 
