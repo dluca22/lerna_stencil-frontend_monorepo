@@ -1,14 +1,8 @@
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-import './App.css'
+<script>
+</script>
 
-function App() {
-  // const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <section>
+<template>
+   <section>
         <div>
           This is the standard element, it inherits the global styles and applies none of its own
         </div>
@@ -66,9 +60,4 @@ function App() {
         <another-one></another-one>
       </section>
 
-
-    </>
-  )
-}
-
-export default App
+</template>

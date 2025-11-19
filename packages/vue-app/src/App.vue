@@ -1,28 +1,22 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
+import CustomVueComponentsDisplay from './components/CustomVueComponentsDisplay.vue'
 </script>
 
 <template>
-  <my-component first="Your" last="Name"></my-component>
-
-  <template-card first="walker" last="Texas Ranger" job="Ranger/semi-god"
-    description-text="I usually smoke cigars and smash dickheads....but i'm all out of cigars" age="49"
-    accomplishments="99" add-complementary-actions="true"></template-card>
-
-  <status-badge message="You are logged in!" status="success"></status-badge>
-  <status-badge message="You received Mail!" status="info"></status-badge>
 
   <header>
     <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
 
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <HelloWorld msg="I did it!" />
     </div>
   </header>
 
   <main>
-    <TheWelcome />
+    <!-- <TheWelcome /> -->
+     <CustomVueComponentsDisplay/>
   </main>
 </template>
 

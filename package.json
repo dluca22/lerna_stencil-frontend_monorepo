@@ -11,7 +11,7 @@
     "build:vue-lib": "lerna run build --scope=vue-library",
     "run:stencil": "lerna run start --scope=stencil-library",
     "run:angular": "lerna run start --scope=angular-workspace",
-    "run:react": "lerna run watch --scope=react-app",
+    "run:react": "lerna run dev --scope=react-app",
     "run:vue": "lerna run dev --scope=vue-app"
   },
   "devDependencies": {
