@@ -1,0 +1,99 @@
+// import { useState } from 'react'
+// import reactLogo from './assets/react.svg'
+// import viteLogo from '/vite.svg'
+import './App.css'
+
+function App() {
+  // const [count, setCount] = useState(0)
+
+  return (
+    <>
+        {/*
+      <div>
+         <a href="https://vite.dev" target="_blank">
+          <img src={viteLogo} className="logo" alt="Vite logo" />
+        </a>
+        <a href="https://react.dev" target="_blank">
+          <img src={reactLogo} className="logo react" alt="React logo" />
+        </a>
+      </div>
+      <h1>Vite + React</h1>
+      <div className="card">
+        <button onClick={() => setCount((count) => count + 1)}>
+          count is {count}
+        </button>
+        <p>
+          Edit <code>src/App.tsx</code> and save to test HMR
+        </p>
+      </div>
+      <p className="read-the-docs">
+        Click on the Vite and React logos to learn more
+      </p> */}
+
+      <section>
+          <div>
+            This is the standard element, it inherits the global styles and applies none of its own
+          </div>
+          <my-component first="Stencil" middle="'Don't call me a framework'" last="JS"></my-component>
+
+        </section>
+        <section>
+          <div>
+            This is another custom elements, in the shadow dom, which applies scoped styles that do not bleed outside
+            its own scope
+          </div>
+          <custom-hello first="Walker" middle="texas" last="ranger"></custom-hello>
+        </section>
+
+        <section>
+          <div>
+            This is a Card showcase with their own sub children and scoped styles
+          </div>
+          <div style="display: flex; gap: 5px; flex-wrap: wrap;">
+
+            <template-card first="walker" last="Texas Ranger" job="Ranger/semi-god"
+              description-text="I usually smoke cigars and smash dickheads....but i'm all out of cigars" age="49"
+              accomplishments="99" add-complementary-actions="true"></template-card>
+
+            <!-- camelCase props in html must be passed as dashed-case  -->
+            <div>
+              <template-card first="rookie " last="patookie" job="Web dev"
+                description-text="I crash them code like it's going out of style" age="33" accomplishments="0"
+                add-complementary-actions="true"></template-card>
+
+              <!-- <button-event> +1 accomplishment!</button-event>  -->
+              <!-- it can get send events elsewhere -->
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div>
+            This is a status badge
+          </div>
+          <status-badge message="You are logged in!" status="success"></status-badge>
+          <status-badge message="You received Mail!" status="info"></status-badge>
+          <status-badge message="Your token is about to expire!" status="warning"></status-badge>
+          <status-badge message="I will auto remove!" auto-remove ttl="5" status="secondary"></status-badge>
+        </section>
+
+        <section>
+          <div>
+            other componente created after
+          </div>
+          <hardcoded-values></hardcoded-values>
+        </section>
+        
+        <section>
+          <div>
+            other giving issue?!?!?!
+          </div>
+          <another-one></another-one>
+        </section>
+
+
+    </>
+  )
+}
+
+export default App

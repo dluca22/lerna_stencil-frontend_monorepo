@@ -1,0 +1,27 @@
+import type { EventName, StencilReactComponent } from '@stencil/react-output-target/runtime';
+import { AnotherOne as AnotherOneElement } from "stencil-library/dist/components/another-one.js";
+import { ButtonEvent as ButtonEventElement } from "stencil-library/dist/components/button-event.js";
+import { CustomHello as CustomHelloElement } from "stencil-library/dist/components/custom-hello.js";
+import { HardcodedValues as HardcodedValuesElement } from "stencil-library/dist/components/hardcoded-values.js";
+import { MyComponent as MyComponentElement } from "stencil-library/dist/components/my-component.js";
+import { StatusBadge as StatusBadgeElement } from "stencil-library/dist/components/status-badge.js";
+import { TemplateCard as TemplateCardElement } from "stencil-library/dist/components/template-card.js";
+import { XIcon as XIconElement } from "stencil-library/dist/components/x-icon.js";
+export type AnotherOneEvents = NonNullable<unknown>;
+export declare const AnotherOne: StencilReactComponent<AnotherOneElement, AnotherOneEvents>;
+export type ButtonEventEvents = {
+    onCountIncreased: EventName<CustomEvent<number>>;
+};
+export declare const ButtonEvent: StencilReactComponent<ButtonEventElement, ButtonEventEvents>;
+export type CustomHelloEvents = NonNullable<unknown>;
+export declare const CustomHello: StencilReactComponent<CustomHelloElement, CustomHelloEvents>;
+export type HardcodedValuesEvents = NonNullable<unknown>;
+export declare const HardcodedValues: StencilReactComponent<HardcodedValuesElement, HardcodedValuesEvents>;
+export type MyComponentEvents = NonNullable<unknown>;
+export declare const MyComponent: StencilReactComponent<MyComponentElement, MyComponentEvents>;
+export type StatusBadgeEvents = NonNullable<unknown>;
+export declare const StatusBadge: StencilReactComponent<StatusBadgeElement, StatusBadgeEvents>;
+export type TemplateCardEvents = NonNullable<unknown>;
+export declare const TemplateCard: StencilReactComponent<TemplateCardElement, TemplateCardEvents>;
+export type XIconEvents = NonNullable<unknown>;
+export declare const XIcon: StencilReactComponent<XIconElement, XIconEvents>;

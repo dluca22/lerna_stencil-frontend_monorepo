@@ -6,12 +6,12 @@
   ],
   "scripts": {
     "build:stencil": "lerna run build --scope=stencil-library",
-    "build:angular-lib": "lerna run build --scope=angular",
-    "build:react": "lerna run build --scope=react-stencil",
-    "build:vue": "lerna run build --scope=vue-library",
+    "build:angular-lib": "lerna run build-component-lib --scope=angular-workspace",
+    "build:react-lib": "lerna run build --scope=react-library",
+    "build:vue-lib": "lerna run build --scope=vue-library",
     "run:stencil": "lerna run start --scope=stencil-library",
-    "run:angular": "lerna run start --scope=angular",
-    "run:react": "lerna run watch --scope=react-stencil",
+    "run:angular": "lerna run start --scope=angular-workspace",
+    "run:react": "lerna run watch --scope=react-app",
     "run:vue": "lerna run dev --scope=vue-app"
   },
   "devDependencies": {
