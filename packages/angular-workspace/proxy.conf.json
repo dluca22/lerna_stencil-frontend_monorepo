@@ -1,0 +1,9 @@
+{
+  "/api": {
+    "target": "​https://api.spacexdata.com",  
+    "secure": true,
+    "changeOrigin": true,
+    "logLevel": "debug",
+    "pathRewrite": {"^/api" : ""}
+  }
+}
