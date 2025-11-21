@@ -17,6 +17,22 @@ export const MyComponent = defineContainer('my-component', undefined, [
     'middle',
     'last'
 ]);
+export const RocketCard = defineContainer('rocket-card', undefined, [
+    'name',
+    'description',
+    'heightMeters',
+    'heightFeet',
+    'diameterMeters',
+    'diameterFeet',
+    'massKg',
+    'massLb',
+    'stages',
+    'first_flight',
+    'country',
+    'company',
+    'payload_weights',
+    'image'
+]);
 export const StatusBadge = defineContainer('status-badge', undefined, [
     'message',
     'status',
@@ -32,6 +48,10 @@ export const TemplateCard = defineContainer('template-card', undefined, [
     'accomplishments',
     'age',
     'addComplementaryActions'
+]);
+export const TextSnippetExpand = defineContainer('text-snippet-expand', undefined, [
+    'maxLength',
+    'text'
 ]);
 export const XIcon = defineContainer('x-icon', undefined);
 //# sourceMappingURL=components.js.map

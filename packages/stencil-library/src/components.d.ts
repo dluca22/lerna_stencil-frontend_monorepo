@@ -32,6 +32,23 @@ export namespace Components {
          */
         "middle": string;
     }
+    interface RocketCard {
+        "company": string;
+        "country": string;
+        "description": string;
+        "diameterFeet": number;
+        "diameterMeters": number;
+        "first_flight": string;
+        "heightFeet": number;
+        "heightMeters": number;
+        "image": string | undefined;
+        "massKg": number;
+        "massLb": number;
+        "name": string;
+        "payload_weights": number;
+        "stages": number | string;
+        "type": string;
+    }
     interface StatusBadge {
         /**
           * @default false
@@ -59,6 +76,16 @@ export namespace Components {
         "first": string;
         "job": string;
         "last": string;
+    }
+    interface TextSnippetExpand {
+        /**
+          * @default 100
+         */
+        "maxLength": number;
+        /**
+          * @default ""
+         */
+        "text": string;
     }
     interface XIcon {
     }
@@ -109,6 +136,12 @@ declare global {
         prototype: HTMLMyComponentElement;
         new (): HTMLMyComponentElement;
     };
+    interface HTMLRocketCardElement extends Components.RocketCard, HTMLStencilElement {
+    }
+    var HTMLRocketCardElement: {
+        prototype: HTMLRocketCardElement;
+        new (): HTMLRocketCardElement;
+    };
     interface HTMLStatusBadgeElement extends Components.StatusBadge, HTMLStencilElement {
     }
     var HTMLStatusBadgeElement: {
@@ -120,6 +153,12 @@ declare global {
     var HTMLTemplateCardElement: {
         prototype: HTMLTemplateCardElement;
         new (): HTMLTemplateCardElement;
+    };
+    interface HTMLTextSnippetExpandElement extends Components.TextSnippetExpand, HTMLStencilElement {
+    }
+    var HTMLTextSnippetExpandElement: {
+        prototype: HTMLTextSnippetExpandElement;
+        new (): HTMLTextSnippetExpandElement;
     };
     interface HTMLXIconElement extends Components.XIcon, HTMLStencilElement {
     }
@@ -133,8 +172,10 @@ declare global {
         "custom-hello": HTMLCustomHelloElement;
         "hardcoded-values": HTMLHardcodedValuesElement;
         "my-component": HTMLMyComponentElement;
+        "rocket-card": HTMLRocketCardElement;
         "status-badge": HTMLStatusBadgeElement;
         "template-card": HTMLTemplateCardElement;
+        "text-snippet-expand": HTMLTextSnippetExpandElement;
         "x-icon": HTMLXIconElement;
     }
 }
@@ -166,6 +207,23 @@ declare namespace LocalJSX {
          */
         "middle"?: string;
     }
+    interface RocketCard {
+        "company"?: string;
+        "country"?: string;
+        "description"?: string;
+        "diameterFeet"?: number;
+        "diameterMeters"?: number;
+        "first_flight"?: string;
+        "heightFeet"?: number;
+        "heightMeters"?: number;
+        "image"?: string | undefined;
+        "massKg"?: number;
+        "massLb"?: number;
+        "name"?: string;
+        "payload_weights"?: number;
+        "stages"?: number | string;
+        "type"?: string;
+    }
     interface StatusBadge {
         /**
           * @default false
@@ -194,6 +252,16 @@ declare namespace LocalJSX {
         "job"?: string;
         "last"?: string;
     }
+    interface TextSnippetExpand {
+        /**
+          * @default 100
+         */
+        "maxLength"?: number;
+        /**
+          * @default ""
+         */
+        "text"?: string;
+    }
     interface XIcon {
     }
     interface IntrinsicElements {
@@ -202,8 +270,10 @@ declare namespace LocalJSX {
         "custom-hello": CustomHello;
         "hardcoded-values": HardcodedValues;
         "my-component": MyComponent;
+        "rocket-card": RocketCard;
         "status-badge": StatusBadge;
         "template-card": TemplateCard;
+        "text-snippet-expand": TextSnippetExpand;
         "x-icon": XIcon;
     }
 }
@@ -216,8 +286,10 @@ declare module "@stencil/core" {
             "custom-hello": LocalJSX.CustomHello & JSXBase.HTMLAttributes<HTMLCustomHelloElement>;
             "hardcoded-values": LocalJSX.HardcodedValues & JSXBase.HTMLAttributes<HTMLHardcodedValuesElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "rocket-card": LocalJSX.RocketCard & JSXBase.HTMLAttributes<HTMLRocketCardElement>;
             "status-badge": LocalJSX.StatusBadge & JSXBase.HTMLAttributes<HTMLStatusBadgeElement>;
             "template-card": LocalJSX.TemplateCard & JSXBase.HTMLAttributes<HTMLTemplateCardElement>;
+            "text-snippet-expand": LocalJSX.TextSnippetExpand & JSXBase.HTMLAttributes<HTMLTextSnippetExpandElement>;
             "x-icon": LocalJSX.XIcon & JSXBase.HTMLAttributes<HTMLXIconElement>;
         }
     }

@@ -7,7 +7,9 @@ export const DIRECTIVES = [
   d.CustomHello,
   d.HardcodedValues,
   d.MyComponent,
+  d.RocketCard,
   d.StatusBadge,
   d.TemplateCard,
+  d.TextSnippetExpand,
   d.XIcon
 ];

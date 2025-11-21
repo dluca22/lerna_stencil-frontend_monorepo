@@ -1,17 +1,28 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
-    <title>Stencil Component Starter</title>
 
-    <script type="module" src="/build/stencil-library.esm.js"></script>
-    <script nomodule src="/build/stencil-library.js"></script>
-     <link rel="stylesheet" href="/assets/style.css">
-    
-  </head>
-  <body>
-    <section>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+  <title>Stencil Component Starter</title>
+
+  <script type="module" src="/build/stencil-library.esm.js"></script>
+  <script nomodule src="/build/stencil-library.js"></script>
+  <script src="./mockupData.js"></script>
+  <link rel="stylesheet" href="/assets/style.css">
+
+</head>
+
+<body>
+
+  <div id="rocket-content">
+    <rocket-card id="rocketCard"></rocket-card>
+  </div>
+</body>
+
+</html>
+
+<!-- <section>
       <div>
         This is the standard element, it inherits the global styles and applies none of its own
       </div>
@@ -41,7 +52,7 @@
         add-complementary-actions="true"
         ></template-card>
       
-        <!-- camelCase props in html must be passed as dashed-case  -->
+         camelCase props in html must be passed as dashed-case  
         <div>
           <template-card
           first="rookie "
@@ -53,8 +64,8 @@
           add-complementary-actions="true"
           ></template-card>
           
-          <!-- <button-event> +1 accomplishment!</button-event>  -->
-          <!-- it can get send events elsewhere -->
+           <button-event> +1 accomplishment!</button-event>  
+           it can get send events elsewhere 
         </div>
       </div>
     </section>
@@ -68,8 +79,4 @@
     <status-badge message="Your token is about to expire!" status="warning"></status-badge>
     <status-badge message="I will auto remove!" auto-remove ttl="5" status="secondary"></status-badge>
     </section>
-     
-
-
-  </body>
-</html>
+    -->

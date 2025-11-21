@@ -1,0 +1,72 @@
+:host {
+  display: block;
+  font-family: 'Inter', sans-serif;
+}
+
+.card {
+  width: 260px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #e4e4e4;
+  border: 1px solid #e5e7eb;
+  cursor: pointer;
+}
+
+.card:hover {
+  background: #fff;
+  border: 1px solid #e4e4e4;
+
+
+}
+
+.rocket-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  background: #f3f4f6;
+}
+
+.card-content {
+  padding: 12px 14px;
+}
+
+.card-content h2 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.description {
+  font-size: 0.5rem;
+  color: #4b5563;
+  margin: 6px 0 10px 0;
+  line-height: 1.3;
+  min-height: 32px;
+}
+
+.specs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 12px;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 10px 0;
+  font-size: 0.78rem;
+  color: #374151;
+}
+
+.specs li strong {
+  font-weight: 600;
+}
+
+a {
+  font-size: 0.8rem;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}

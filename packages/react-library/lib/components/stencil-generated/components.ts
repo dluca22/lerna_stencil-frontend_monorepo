@@ -15,8 +15,10 @@ import { ButtonEvent as ButtonEventElement, defineCustomElement as defineButtonE
 import { CustomHello as CustomHelloElement, defineCustomElement as defineCustomHello } from "stencil-library/dist/components/custom-hello.js";
 import { HardcodedValues as HardcodedValuesElement, defineCustomElement as defineHardcodedValues } from "stencil-library/dist/components/hardcoded-values.js";
 import { MyComponent as MyComponentElement, defineCustomElement as defineMyComponent } from "stencil-library/dist/components/my-component.js";
+import { RocketCard as RocketCardElement, defineCustomElement as defineRocketCard } from "stencil-library/dist/components/rocket-card.js";
 import { StatusBadge as StatusBadgeElement, defineCustomElement as defineStatusBadge } from "stencil-library/dist/components/status-badge.js";
 import { TemplateCard as TemplateCardElement, defineCustomElement as defineTemplateCard } from "stencil-library/dist/components/template-card.js";
+import { TextSnippetExpand as TextSnippetExpandElement, defineCustomElement as defineTextSnippetExpand } from "stencil-library/dist/components/text-snippet-expand.js";
 import { XIcon as XIconElement, defineCustomElement as defineXIcon } from "stencil-library/dist/components/x-icon.js";
 
 export type AnotherOneEvents = NonNullable<unknown>;
@@ -74,6 +76,17 @@ export const MyComponent: StencilReactComponent<MyComponentElement, MyComponentE
     defineCustomElement: defineMyComponent
 });
 
+export type RocketCardEvents = NonNullable<unknown>;
+
+export const RocketCard: StencilReactComponent<RocketCardElement, RocketCardEvents> = /*@__PURE__*/ createComponent<RocketCardElement, RocketCardEvents>({
+    tagName: 'rocket-card',
+    elementClass: RocketCardElement,
+    // @ts-ignore - ignore potential React type mismatches between the Stencil Output Target and your project.
+    react: React,
+    events: {} as RocketCardEvents,
+    defineCustomElement: defineRocketCard
+});
+
 export type StatusBadgeEvents = NonNullable<unknown>;
 
 export const StatusBadge: StencilReactComponent<StatusBadgeElement, StatusBadgeEvents> = /*@__PURE__*/ createComponent<StatusBadgeElement, StatusBadgeEvents>({
@@ -94,6 +107,17 @@ export const TemplateCard: StencilReactComponent<TemplateCardElement, TemplateCa
     react: React,
     events: {} as TemplateCardEvents,
     defineCustomElement: defineTemplateCard
+});
+
+export type TextSnippetExpandEvents = NonNullable<unknown>;
+
+export const TextSnippetExpand: StencilReactComponent<TextSnippetExpandElement, TextSnippetExpandEvents> = /*@__PURE__*/ createComponent<TextSnippetExpandElement, TextSnippetExpandEvents>({
+    tagName: 'text-snippet-expand',
+    elementClass: TextSnippetExpandElement,
+    // @ts-ignore - ignore potential React type mismatches between the Stencil Output Target and your project.
+    react: React,
+    events: {} as TextSnippetExpandEvents,
+    defineCustomElement: defineTextSnippetExpand
 });
 
 export type XIconEvents = NonNullable<unknown>;

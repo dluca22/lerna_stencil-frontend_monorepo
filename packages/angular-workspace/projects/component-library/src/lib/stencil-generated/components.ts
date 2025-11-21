@@ -126,6 +126,29 @@ export declare interface MyComponent extends Components.MyComponent {}
 
 
 @ProxyCmp({
+  inputs: ['company', 'country', 'description', 'diameterFeet', 'diameterMeters', 'first_flight', 'heightFeet', 'heightMeters', 'image', 'massKg', 'massLb', 'name', 'payload_weights', 'stages', 'type']
+})
+@Component({
+  selector: 'rocket-card',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: '<ng-content></ng-content>',
+  // eslint-disable-next-line @angular-eslint/no-inputs-metadata-property
+  inputs: ['company', 'country', 'description', 'diameterFeet', 'diameterMeters', 'first_flight', 'heightFeet', 'heightMeters', 'image', 'massKg', 'massLb', 'name', 'payload_weights', 'stages', 'type'],
+  standalone: false
+})
+export class RocketCard {
+  protected el: HTMLRocketCardElement;
+  constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
+    c.detach();
+    this.el = r.nativeElement;
+  }
+}
+
+
+export declare interface RocketCard extends Components.RocketCard {}
+
+
+@ProxyCmp({
   inputs: ['autoRemove', 'message', 'persistent', 'status', 'ttl']
 })
 @Component({
@@ -169,6 +192,29 @@ export class TemplateCard {
 
 
 export declare interface TemplateCard extends Components.TemplateCard {}
+
+
+@ProxyCmp({
+  inputs: ['maxLength', 'text']
+})
+@Component({
+  selector: 'text-snippet-expand',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: '<ng-content></ng-content>',
+  // eslint-disable-next-line @angular-eslint/no-inputs-metadata-property
+  inputs: ['maxLength', 'text'],
+  standalone: false
+})
+export class TextSnippetExpand {
+  protected el: HTMLTextSnippetExpandElement;
+  constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
+    c.detach();
+    this.el = r.nativeElement;
+  }
+}
+
+
+export declare interface TextSnippetExpand extends Components.TextSnippetExpand {}
 
 
 @ProxyCmp({

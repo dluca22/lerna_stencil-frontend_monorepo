@@ -2,9 +2,26 @@
   Rockets
 </h1>
 <div *ngIf="loading == false">
-  <pre>
-    {{rockets[0] | json}}
-  </pre>
+  
+  <ng-container *ngFor="let rocket of rockets">
+    <rocket-card
+      [name]="rocket.name"
+      [description]="rocket.description"
+      [heightMeters]="rocket.height.meters"
+      [heightFeet]="rocket.height.feet"
+      [diameterMeters]="rocket.diameter.meters"
+      [diameterFeet]="rocket.diameter.feet"
+      [massKg]="rocket.mass.kg"
+      [massLb]="rocket.mass.lb"
+      [stages]="rocket.stages"
+      [first_flight]="rocket.first_flight"
+      [country]="rocket.country"
+      [company]="rocket.company"
+      [payload_weights]="rocket.payload_weights"
+      [image]="rocket.flickr_images[0]"
+    ></rocket-card>
+    
+  </ng-container>
 
 </div>
 <!-- 

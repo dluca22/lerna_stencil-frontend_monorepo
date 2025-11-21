@@ -5,6 +5,8 @@ export declare const ButtonEvent: StencilVueComponent<JSX.ButtonEvent>;
 export declare const CustomHello: StencilVueComponent<JSX.CustomHello>;
 export declare const HardcodedValues: StencilVueComponent<JSX.HardcodedValues>;
 export declare const MyComponent: StencilVueComponent<JSX.MyComponent>;
+export declare const RocketCard: StencilVueComponent<JSX.RocketCard>;
 export declare const StatusBadge: StencilVueComponent<JSX.StatusBadge>;
 export declare const TemplateCard: StencilVueComponent<JSX.TemplateCard>;
+export declare const TextSnippetExpand: StencilVueComponent<JSX.TextSnippetExpand>;
 export declare const XIcon: StencilVueComponent<JSX.XIcon>;

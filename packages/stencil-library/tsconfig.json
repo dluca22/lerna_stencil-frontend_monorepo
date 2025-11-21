@@ -19,7 +19,7 @@
   },
   "include": [
     "src"
-  ],
+, "www/altro.js"  ],
   "exclude": [
     "node_modules"
   ]

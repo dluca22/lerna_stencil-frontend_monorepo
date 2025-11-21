@@ -6,8 +6,10 @@ import { ButtonEvent as ButtonEventElement, defineCustomElement as defineButtonE
 import { CustomHello as CustomHelloElement, defineCustomElement as defineCustomHello } from "stencil-library/dist/components/custom-hello.js";
 import { HardcodedValues as HardcodedValuesElement, defineCustomElement as defineHardcodedValues } from "stencil-library/dist/components/hardcoded-values.js";
 import { MyComponent as MyComponentElement, defineCustomElement as defineMyComponent } from "stencil-library/dist/components/my-component.js";
+import { RocketCard as RocketCardElement, defineCustomElement as defineRocketCard } from "stencil-library/dist/components/rocket-card.js";
 import { StatusBadge as StatusBadgeElement, defineCustomElement as defineStatusBadge } from "stencil-library/dist/components/status-badge.js";
 import { TemplateCard as TemplateCardElement, defineCustomElement as defineTemplateCard } from "stencil-library/dist/components/template-card.js";
+import { TextSnippetExpand as TextSnippetExpandElement, defineCustomElement as defineTextSnippetExpand } from "stencil-library/dist/components/text-snippet-expand.js";
 import { XIcon as XIconElement, defineCustomElement as defineXIcon } from "stencil-library/dist/components/x-icon.js";
 export const AnotherOne = createComponent({
     tagName: 'another-one',
@@ -44,6 +46,13 @@ export const MyComponent = createComponent({
     events: {},
     defineCustomElement: defineMyComponent
 });
+export const RocketCard = createComponent({
+    tagName: 'rocket-card',
+    elementClass: RocketCardElement,
+    react: React,
+    events: {},
+    defineCustomElement: defineRocketCard
+});
 export const StatusBadge = createComponent({
     tagName: 'status-badge',
     elementClass: StatusBadgeElement,
@@ -57,6 +66,13 @@ export const TemplateCard = createComponent({
     react: React,
     events: {},
     defineCustomElement: defineTemplateCard
+});
+export const TextSnippetExpand = createComponent({
+    tagName: 'text-snippet-expand',
+    elementClass: TextSnippetExpandElement,
+    react: React,
+    events: {},
+    defineCustomElement: defineTextSnippetExpand
 });
 export const XIcon = createComponent({
     tagName: 'x-icon',

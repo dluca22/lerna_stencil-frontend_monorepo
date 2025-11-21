@@ -36,6 +36,25 @@ export const MyComponent: StencilVueComponent<JSX.MyComponent> = /*@__PURE__*/ d
 ]);
 
 
+export const RocketCard: StencilVueComponent<JSX.RocketCard> = /*@__PURE__*/ defineContainer<JSX.RocketCard>('rocket-card', undefined, [
+  'name',
+  'type',
+  'description',
+  'heightMeters',
+  'heightFeet',
+  'diameterMeters',
+  'diameterFeet',
+  'massKg',
+  'massLb',
+  'stages',
+  'first_flight',
+  'country',
+  'company',
+  'payload_weights',
+  'image'
+]);
+
+
 export const StatusBadge: StencilVueComponent<JSX.StatusBadge> = /*@__PURE__*/ defineContainer<JSX.StatusBadge>('status-badge', undefined, [
   'message',
   'status',
@@ -53,6 +72,12 @@ export const TemplateCard: StencilVueComponent<JSX.TemplateCard> = /*@__PURE__*/
   'accomplishments',
   'age',
   'addComplementaryActions'
+]);
+
+
+export const TextSnippetExpand: StencilVueComponent<JSX.TextSnippetExpand> = /*@__PURE__*/ defineContainer<JSX.TextSnippetExpand>('text-snippet-expand', undefined, [
+  'maxLength',
+  'text'
 ]);
 
 
