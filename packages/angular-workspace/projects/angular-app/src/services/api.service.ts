@@ -29,7 +29,9 @@ export class ApiService {
   }
 
   get apiUrl(){
-    return [this.$config.api.baseUrl, this.$config.api.version].join('/');
+    // if
+    // return [this.$config.api.baseUrl, this.$config.api.version].join('/');
+    return this.$config.api.baseUrl;
   }
 
   $headers = new HttpHeaders({

@@ -7,6 +7,7 @@ import { App } from './app';
 import { ComponentLibraryModule } from 'component-library';
 import { CustomComponentsShowcase } from './custom-components-showcase/custom-components-showcase';
 import { Rockets } from './rockets/rockets';
+import { provideRouter } from '@angular/router';
 @NgModule({
   declarations: [
     App,

@@ -1,6 +1,6 @@
 import { provideHttpClient } from '@angular/common/http';
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { provideRouter, RouterModule, Routes } from '@angular/router';
 import { App } from './app';
 import { Rockets } from './rockets/rockets';
 
@@ -24,6 +24,7 @@ const routes: Routes = [
   exports: [RouterModule],
   providers: [
     provideHttpClient(),
+    provideRouter(routes)
   ]
 })
 export class AppRoutingModule { }

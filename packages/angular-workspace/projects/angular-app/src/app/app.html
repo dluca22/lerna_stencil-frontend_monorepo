@@ -2,12 +2,14 @@
 <main class="main">
   <div class="content">
     <div class="left-side">
-      <h1>Hello, {{ title() }}</h1>
-      <p>Congratulations! Your app is running. 🎉</p>
+      <h1>{{ appTitle }}</h1>
+      
 
       <div>
        <!-- <app-custom-components-showcase></app-custom-components-showcase> -->
          <a routerLink="/rockets">Rockets</a>
+
+         <router-outlet></router-outlet>
       </div>
     </div>
     <div class="divider" role="separator" aria-label="Divider"></div>
@@ -16,5 +18,3 @@
   </div>
 </main>
 
-
-<router-outlet />

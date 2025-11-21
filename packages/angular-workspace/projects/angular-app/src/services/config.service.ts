@@ -1,5 +1,5 @@
 import { HttpClient } from "@angular/common/http";
-import { inject, Injectable } from "@angular/core";
+import { inject, Injectable, signal } from "@angular/core";
 
 export const ALLOWED_ENDPOINTS = [
   'capsules',
@@ -30,12 +30,15 @@ export interface IConfiguration {
 
 @Injectable({providedIn: 'root'})
 export class ConfigService {
+  readonly title = signal('SpaceX PMS');
+
   private http = inject(HttpClient);
   
   config: IConfiguration = {
     api: { // quick defiinition based on snooping aronund docs
-      baseUrl: 'https://api.spacexdata.com',
-      version: 'v4' // or latest so it handles by default to newest...
+      // baseUrl: 'https://api.spacexdata.com',
+      baseUrl: 'http://localhost:3001',
+      version: '' // or latest so it handles by default to newest...
     }
   };
 }
