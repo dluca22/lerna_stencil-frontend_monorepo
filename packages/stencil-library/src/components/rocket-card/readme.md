@@ -23,6 +23,7 @@
 | `name`            | `name`            |             | `string`           | `undefined` |
 | `payload_weights` | `payload_weights` |             | `number`           | `undefined` |
 | `stages`          | `stages`          |             | `number \| string` | `undefined` |
+| `type`            | `type`            |             | `string`           | `undefined` |
 
 
 ## Dependencies

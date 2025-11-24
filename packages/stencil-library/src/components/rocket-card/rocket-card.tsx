@@ -20,9 +20,9 @@ export class RocketCard {
   @Prop() first_flight: string;
   @Prop() country: string;
   @Prop() company: string;
-  @Prop() payload_weights: number;
+  // @Prop() payload_weights: number;
   @Prop() image: string | undefined;
-  
+
   get hasImage() {
     return this.image !== undefined;
   }

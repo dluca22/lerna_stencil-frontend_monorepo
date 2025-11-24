@@ -7,7 +7,8 @@
     "build-component-lib": "ng build component-library",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "generate": "ng generate component --project=angular-app --path=projects/angular-app/src/app --export"
   },
   "prettier": {
     "printWidth": 100,

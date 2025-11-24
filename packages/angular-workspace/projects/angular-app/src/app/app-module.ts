@@ -8,11 +8,13 @@ import { ComponentLibraryModule } from 'component-library';
 import { CustomComponentsShowcase } from './custom-components-showcase/custom-components-showcase';
 import { Rockets } from './rockets/rockets';
 import { provideRouter } from '@angular/router';
+// import { RoadsterDetails } from './roadster-details/roadster-details';
 @NgModule({
   declarations: [
     App,
     CustomComponentsShowcase,
-    Rockets
+    Rockets,
+    // RoadsterDetails
   ],
   imports: [
     BrowserModule,
@@ -25,7 +27,8 @@ import { provideRouter } from '@angular/router';
   bootstrap: [App],
   exports: [
     CustomComponentsShowcase,
-    Rockets
+    Rockets,
+    // RoadsterDetails
   ]
 })
 export class AppModule { }

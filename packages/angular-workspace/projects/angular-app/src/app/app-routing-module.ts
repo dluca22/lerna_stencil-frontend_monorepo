@@ -14,6 +14,58 @@ const routes: Routes = [
     component: Rockets,
   },
   // {
+  //   path: "capsules",
+  //   component: Capsules
+  // },
+  // {
+  //   path: "company",
+  //   component: Company
+  // },
+  // {
+  //   path: "cores",
+  //   component: Cores
+  // },
+  // {
+  //   path: "crew",
+  //   component: Crew
+  // },
+  // {
+  //   path: "dragons",
+  //   component: Dragons
+  // },
+  // {
+  //   path: "history",
+  //   component: FlightHistory
+  // },
+  // {
+  //   path: "landpads",
+  //   component: Landpads
+  // },
+  // {
+  //   path: "launches",
+  //   component: Launches
+  // },
+  // {
+  //   path: "launchpads",
+  //   component: Launchpads
+  // },
+  // {
+  //   path: "payloads",
+  //   component: Payloads
+  // },
+  // {
+  //   path: "roadster",
+  //   component: Roadster
+  // },
+  // {
+  //   path: "ships",
+  //   component: Ships
+  // },
+  // {
+  //   path: "starlink",
+  //   component: Starlink
+  // },
+  // {
   //   path: '',
   //   loadComponent: () => import('./components/home/home-page').then(m => m.HomePage)
   // }
